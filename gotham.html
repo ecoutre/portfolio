@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head profile="http://www.w3.org/2005/10/profile">
+		 <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:title" content="Evan Coutre" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Hi there! I'm a full-stack designer from usc and currently a student at USC studying computer science and business administration while also continuing my love for playing soccer. Fight On! I am naturally an analytical thinker, however combining this with my creative talent and eye for perfection seperates me from the rest. You can view some of my work below. If you want to work together or just say hi feel free to reach out anytime." />
+        <meta property="og:url" content="http://www.evancoutre.com/" />
+        <meta property="og:image" content="http://www.evancoutre.com/src/fb_photo.png" />
+
+        <!-- js -->
+		<script src="js/classie.js"></script>
+		<script>
+		    function init() {
+		        window.addEventListener('scroll', function(e){
+		            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+		                shrinkOn = 100,
+		                header = document.querySelector("header");
+		            if (distanceY > shrinkOn) {
+		                classie.add(header,"smaller");
+		            } else {
+		                if (classie.has(header,"smaller")) {
+		                    classie.remove(header,"smaller");
+		                }
+		            }
+		        });
+		    }
+		    window.onload = init();
+		</script>
+
+
+    	<script language="javascript" type="text/javascript" src="site.js"></script>
+
+        <script>
+  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  			ga('create', 'UA-58181011-1', 'auto');
+  			ga('send', 'pageview');
+
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="project.css">
+		<link rel="stylesheet" type="text/css" href="grid-custom.css">
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+		<link rel="icon" type="image/png" href="src/favicon.png">    	<title>Gotham | Evan Coutre</title>
+	</head>
+
+	<header>
+ 		<div class="row clearfix header gotham">
+ 			<div class="column full">
+ 			<h1 id="logo">
+ 				<img class="logo" src='src/logo_gotham.png'></img>
+			<h1>
+			<nav>
+				<div class="link back"><a href="index.html"><span class="optional">BACK</span> HOME</a></div>
+
+				<div class="link next"><a href="drawings.html">NEXT<span class="optional">: DRAWINGS</span></a></div>
+			<nav>
+			</div>
+
+    	</div>
+    </header>
+
+    <body>
+
+	<div id="wrapper">
+
+	<div id="content">
+
+		<div class="container gotham">
+
+	 		<div class="row clearfix">
+
+				<div class="column full">
+
+					<div class="body first">For this project we were asked to build essentially an elementary version of Sim City.  I was selected by my professors to be the team leader of a 5-person group to complete the task using <a href="https://github.com/ecoutre/GothamCity" target="_blank">Github</a> to collaborate.  The professors provided some code to get started, however my team decided to build everything on our own from scratch.  The backend was written using multi-threaded agent code in Java.  We had to learn most of the front-end on our own &amp; wrote it using the Java Swing library.  Unit tested using JUnit.
+
+					<div class="body">
+						<span class="header">Project Info:</span><br />
+						Team Size: 5<br>
+						Duration of project: 5 weeks<br>
+						Time Spent on Project: 50-60 hours per week (We didn't sleep much :) )<br>
+						Lines of code: over 120,000<br>
+						Language: Java<br>
+						Tools: Eclipse, JUnit, Github, Git<br>
+						Results: One of the highest group grades in the class
+					</div>
+
+
+
+
+					<div class="image gotham-kin">
+						<div class="title">Gotham City</div>
+						<div class="caption">Here's a screenshot of the project</div>
+						<div class="mask"></div>
+					</div>
+
+					<div class="bottom-links">
+
+						<div class="previous-bottom"><a href="gunslinger.html"><span class="optional">Previous: </span><span class="onSmall">&lt; &nbsp;</span>Gunslinger</a></div>
+
+						<div class="next-bottom"><a href="drawings.html"><span class="optional">Next: </span>Drawings<span class="onSmall">&nbsp; &gt;</span></a></div>
+
+					</div>
+
+
+				</div>
+	    	</div>
+
+	    </div>
+	</div>
+
+	<div id="footer">
+
+
+		<footer class="row clearfix">
+			<div class="nav">
+				<div class="column full nav-1">
+					<a href="https://twitter.com/evancoutre" target="_blank">Twitter</a>
+                    <a href="https://www.linkedin.com/in/evancoutre" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/ecoutre" target="_blank">Github</a>
+				</div>
+			</div>
+    	</footer>
+
+    </div>
+    </div>
+
+	</body>
+</html>

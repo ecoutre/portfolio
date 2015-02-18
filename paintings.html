@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<head>
 		 <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +11,25 @@
         <meta property="og:description" content="Hi there! I'm a full-stack designer from usc and currently a student at USC studying computer science and business administration while also continuing my love for playing soccer. Fight On! I am naturally an analytical thinker, however combining this with my creative talent and eye for perfection seperates me from the rest. You can view some of my work below. If you want to work together or just say hi feel free to reach out anytime." />
         <meta property="og:url" content="http://www.evancoutre.com/" />
         <meta property="og:image" content="http://www.evancoutre.com/src/fb_photo.png" />
+
+        <!-- Add jQuery library -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+        <!-- Add mousewheel plugin (this is optional) -->
+        <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+        <!-- Add fancyBox -->
+        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+        <!-- Optionally add helpers - button, thumbnail and/or media -->
+        <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+        <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
 
         <!-- js -->
 		<script src="js/classie.js"></script>
@@ -51,6 +71,165 @@
 
 		<link rel="icon" type="image/png" href="src/favicon.png">
     	<title>Paintings | Evan Coutre</title>
+
+       <style type="text/css">
+    
+        .logo {
+          max-height: 11rem;
+          max-width: 16rem;
+        }
+      
+    .wrap {
+      overflow: hidden;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 30px;
+    }
+    .box {
+      float: left;
+      position: relative;
+      width: 30%;
+      padding-bottom: 30%;
+    }
+    .boxInner {
+      position: absolute;
+      left: 2px;
+      right: 2px;
+      top: 2px;
+      bottom: 2px;
+      overflow: hidden;
+    }
+    .boxInner img {
+      width: 100%;
+    }
+    #paintings_1 {
+      
+    }
+    #paintings_2 {
+      
+    }
+    #paintings_3 {
+      
+    }
+    #paintings_4 {
+      height: 144%;
+      width: 144%;
+      margin-left: -80px;
+     
+    }
+    #paintings_5 {
+      height: 105%;
+      width: 105%;
+    }
+    #paintings_6 {
+      height: 105%;
+      width: 105%;
+      margin-left: -7px;
+      margin-top: -7px;
+    }
+    #paintings_8 {
+      margin-right: -5px;
+      margin-top: -20px;
+    }
+    #paintings_9 {
+      background-repeat: none;
+      height: 135%;
+      width: 135%;
+      margin-left: -60px;
+      
+    }
+    #paintings_7 {
+      background-repeat: none;
+      height: 130%;
+      width: 130%;
+      margin-left: -20px;
+    }
+    #paintings_10 {
+     margin-top: -25px;
+    }
+    .fancybox-nav {
+      width: 60px;       
+    }
+
+    .fancybox-nav span {
+      visibility: visible;
+      opacity: 0.5;
+    }
+
+    .fancybox-nav:hover span {
+      opacity: 1;
+    }
+
+    .fancybox-next {
+      right: -60px;
+    }
+
+    .fancybox-prev {
+      left: -60px;
+    }
+    
+    body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+      margin-bottom: 0;
+    }
+    @media only screen and (max-width : 549px) {
+      /* Smartphone view: 1 tile */
+      .box {
+        width: 100%;
+        padding-bottom: 100%;
+      }
+    }
+    @media only screen and (max-width : 849px) and (min-width : 550px) {
+      /* Tablet view: 2 tiles */
+      .box {
+        width: 50%;
+        padding-bottom: 50%;
+      }
+    }
+    @media only screen and (max-width : 1050px) and (min-width : 850px) {
+      /* Small desktop / ipad view: 3 tiles */
+      .box {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+      }
+    }
+    
+  </style>
+
+  <script>
+    $(document).ready(function() {
+      $(".fancybox").fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none'
+      });
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.fancybox').fancybox({
+        closeBtn: false,
+        padding: 0,
+
+        openEffect : 'elastic',
+        openSpeed  : 150,
+
+        closeEffect : 'elastic',
+        closeSpeed  : 150,
+
+         closeClick : true,
+
+        helpers : {
+          overlay : {
+            css : {
+                'background' : 'rgba(0, 0, 0, 0.7)'
+
+              }
+          }
+        }
+      });
+    });
+  </script>
+
 	</head>
 
 	<header>
@@ -90,72 +269,104 @@
   <!-- Define all of the tiles: -->
   <div class="box">
     <div class="boxInner">
+      <div id="paintings_1">
+      <a class="fancybox" rel="gallery1" href="src/paintings_1.jpg">
+        <img src="src/paintings_1.jpg" alt="" />
+      </a>
       <img src="src/paintings_1.jpg" />
-     
+      </div>
     </div>
   </div>
   <div class="box">
     <div class="boxInner">
+    <div id="paintings_2">
+    <a class="fancybox" rel="gallery1" href="src/paintings_2.jpg">
+        <img src="src/paintings_2.jpg" alt="" />
+      </a>
       <img src="src/paintings_2.jpg" />
-      
+      </div>
     </div>
   </div>
   <div class="box">
     <div class="boxInner">
+      <div id="paintings_3">
+      <a class="fancybox" rel="gallery1" href="src/paintings_3.jpg">
+        <img src="src/paintings_3.jpg" alt="" />
+      </a>
       <img src="src/paintings_3.jpg" />
-      
+      </div>
     </div>
   </div>
   <div class="box">
     <div class="boxInner">
+      <div id="paintings_4">
+      <a class="fancybox" rel="gallery1" href="src/paintings_4.jpg">
+        <img src="src/paintings_4.jpg" alt="" />
+      </a>
       <img src="src/paintings_4.jpg" />
-     
+      </div>
     </div>
   </div>
   <div class="box">
     <div class="boxInner">
+      <div id="paintings_5">
+      <a class="fancybox" rel="gallery1" href="src/paintings_5.jpg">
+        <img src="src/paintings_5.jpg" alt="" />
+      </a>
       <img src="src/paintings_5.jpg" />
-     
+      </div>
     </div>
   </div>
   <div class="box">
     <div class="boxInner">
+      <div id="paintings_6">
+      <a class="fancybox" rel="gallery1" href="src/paintings_6.jpg">
+        <img src="src/paintings_6.jpg" alt="" />
+      </a>
       <img src="src/paintings_6.jpg" />
-      
+      </div>
     </div>
   </div>
   <div class="box">
     <div class="boxInner">
+      <div id="paintings_7">
+      <a class="fancybox" rel="gallery1" href="src/paintings_7.jpg">
+        <img src="src/paintings_7.jpg" alt="" />
+      </a>
       <img src="src/paintings_7.jpg" />
-      
+      </div>
     </div>
   </div>
   <div class="box">
     <div class="boxInner">
+      <div id="paintings_8">
+      <a class="fancybox" rel="gallery1" href="src/paintings_8.jpg">
+        <img src="src/paintings_8.jpg" alt="" />
+      </a>
       <img src="src/paintings_8.jpg" />
-      
+      </div>
     </div>
   </div>
   <div class="box">
     <div class="boxInner">
+      <div id = "paintings_9">
+      <a class="fancybox" rel="gallery1" href="src/paintings_9.jpg">
+        <img src="src/paintings_9.jpg" alt="" />
+      </a>
       <img src="src/paintings_9.jpg" />
-      
+      </div>
     </div>
   </div>
   <div class="box">
     <div class="boxInner">
+      <div id = "paintings_10">
+      <a class="fancybox" rel="gallery1" href="src/paintings_10.jpg">
+        <img src="src/paintings_10.jpg" alt="" />
+      </a>
       <img src="src/paintings_10.jpg" />
-     
+      </div>
     </div>
   </div>
-  <div class="box">
-    <div class="boxInner">
-      <img src="src/paintings_11.jpg" />
-      
-    </div>
-  </div>
-  
-  
 </div>
 
 					<div class="bottom-links">

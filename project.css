@@ -54,87 +54,8 @@ header {
       transition: all 0.3s; }
       header nav a:hover {
         color: white; }
-  /*header.smaller {
-    height: 5rem; }
-    header.smaller h1#logo {
-      visibility: hidden;
-      max-width: 25%;
-      max-height: 75px;
-      line-height: 10px;
-      }
-     header .smaller h1 img{
-     	max-height: 50%;
-     	max-width: 50%;
-     }
-    header.smaller nav a {
-      line-height: 6rem; }*/
+  
 
-/*header {
-    width: 100%;
-    height: 12rem;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    background-color: #0683c9;
-    -webkit-transition: height 0.3s;
-    -moz-transition: height 0.3s;
-    -ms-transition: height 0.3s;
-    -o-transition: height 0.3s;
-    transition: height 0.3s;
-}
-header h1#logo {
-    display: inline-block;
-    height: 150px;
-    line-height: 150px;
-    float: left;
-    font-size: 60px;
-    color: white;
-    font-weight: 400;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-header nav a {
-	text-decoration: none;
-	font-family: 'PT Sans', sans-serif;
-	letter-spacing: 0.2rem;
-	margin-top: 3.2rem;
-	
-    line-height: 100px;
-    
-    color: rgba(56, 55, 54, 0.25);
-    font-size: 1.6rem;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-header.smaller {
-    height: 6rem;
-}
-header.smaller h1#logo {
-	size
-    display: block;
-    width: 100%;
-    max-height: 0rem;
-    max-width: 0rem;
-    position:absolute;
-    top:0;
-    bottom:0;
-    left: 0;
-    right: 0;
-    margin:auto;
-    
-}
-
-*/
 .onSmall {
 	display: none;
 }
@@ -192,13 +113,17 @@ header .leo {
 	background-color: rgb(80, 224, 155);
 }
 
-.container.leo a:hover {
+.container.leo  a:hover {
+	/*border-bottom: 1px solid rgb(0, 172, 237);*/
 	border-bottom: 1px solid rgb(80, 224, 155);
 }
 
-.container.leo a {
+.container.leo  a {
 	color: rgb(80, 224, 155);
 }
+/*.container.leo #leo_linkedin a:hover{
+	color: rgb(0, 119, 181);
+}*/
 
 
 
@@ -467,7 +392,7 @@ div.selected-screens {
 	background: url('src/leo_group.png') no-repeat center center;
 	background-size: cover;
 	top: -30px;
-	height: 490px;
+	height: 530px;
 	max-width: 80rem;
 	padding:0;
 	/*max-width: 80rem;
@@ -495,104 +420,6 @@ div.image.leo-branding {
 	background: url('src/swipetodismiss.jpg') no-repeat center center;
 	background-size: cover;
 }
-
-/*.white-image {
-    display: none;
-    position: relative;
-    width: 100%; }
-    .white-image .static {
-      width: 669px;
-      height: 1027px;
-      position: absolute;
-      left: 50%;
-      margin-left: -334.5px;
-      background-image: url("src/leo_1.png");
-      background-repeat: no-repeat;
-      background-size: contain; }
-      
-   	.slider {
-    position: relative; 
-	}
-    .slider div.chevrons {
-      position: relative;
-      z-index: 4; 
-  	}
-       .slider div.chevrons div {
-        width: 18px;
-        height: 32px;
-        opacity: 0.35;
-        display: block;
-        -webkit-transition: opacity 0.3s;
-        transition: opacity 0.3s; 
-    	}
-        .slider div.chevrons div:hover {
-          cursor: pointer;
-          opacity: 0.6; 
-      	}
-       	.slider div.chevrons .previous {
-        position: absolute;
-        left: 60px;
-        background: url("src/previous.png");
-        background-size: cover; 
-    	}
-       	.slider div.chevrons .next {
-        position: absolute;
-        right: 60px;
-        background: url("src/next.png");
-        background-size: cover; 
-    	}
-       	.slider div.chevrons .disabled {
-        opacity: 0.08; 
-    	}
-        .slider div.chevrons .disabled:hover {
-        opacity: 0.08;
-        cursor: auto; 
-      	}
-    .slider div.slide {
-      position: absolute;
-      -webkit-transition: left 0.6s;
-      transition: left 0.6s;
-      -webkit-transition-timing-function: ease-in-out;
-     
-      transition-timing-function: ease-in-out; 
-  	}
-    .slider div.slide.transitionOverride {
-        -webkit-transition: none !important;
-        transition: none !important; 
-    }
-    .slider div.slide.centered {
-        left: 50%; 
-    }
-    .slider div.slide.right {
-        left: 1800px; 
-    }
-    .slider div.slide.left {
-        left: -400px; 
-    }
-     .slider #slider1 {
-      background: url("src/leo_1.png") no-repeat;
-      height: 642px;
-      background-size: contain;
-      width: 642px;
-      margin-left: -321px; }
-     .slider #slider2 {
-      background: url("src/leo_1.png") no-repeat;
-      height: 1497px;
-      background-size: contain;
-      width: 642px;
-      margin-left: -321px; }
-     .slider #slider3 {
-      background: url("src/leo_1.png") no-repeat;
-      height: 340px;
-      background-size: contain;
-      width: 642px;
-      margin-left: -321px; }
-     .slider #slider4 {
-      background: url("src/leo_1.png") no-repeat;
-      height: 340px;
-      background-size: contain;
-      width: 642px;
-      margin-left: -321px; }*/
 
 
 /* usc */
@@ -950,218 +777,6 @@ footer {
 	}
 
 }
-/* test code */
-/*.blockContent {
-  max-width: 580px;
-  padding-left: 20px;
-  padding-right: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Lato", sans-serif;
-  font-weight: 400; }
-  .blockContent .header {
-    width: 100%;
-    font-size: 13px;
-    letter-spacing: 1px;
-    padding-bottom: 8px; }
-    .blockContent .header .title {
-      width: auto;
-      display: inline-block; }
-    .blockContent .header .extra {
-      float: right;
-      font-style: italic; }
-  .blockContent.white .header {
-    color: rgba(0, 0, 0, 0.6);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-    .blockContent.white .header .extra {
-      color: rgba(0, 0, 0, 0.35); }
-  .blockContent.image .header {
-    color: rgba(255, 255, 255, 0.85);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25); }
-    .blockContent.image .header .extra {
-      color: rgba(255, 255, 255, 0.6); }
-  .blockContent .content {
-    line-height: 28px;
-    font-size: 15px;
-    margin-top: 28px; }
-    .blockContent .content p {
-      margin-top: 20px; }
-      .blockContent .content p a {
-        -webkit-transition: all 0.15s;
-        transition: all 0.15s; }
-  .blockContent.white .content {
-    color: rgba(0, 0, 0, 0.6); }
-    .blockContent.white .content p a {
-      color: rgba(0, 0, 0, 0.6); }
-      .blockContent.white .content p a:hover {
-        color: rgba(0, 0, 0, 0.85); }
-    .blockContent.white .content p a.chromeLinks {
-      padding-bottom: 1px;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.35); }
-      .blockContent.white .content p a.chromeLinks:hover {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.6); }
-  .blockContent.image .content {
-    color: rgba(255, 255, 255, 0.85); }
-    .blockContent.image .content p a {
-      color: rgba(255, 255, 255, 0.85); }
-      .blockContent.image .content p a:hover {
-        color: white; }
-    .blockContent.image .content p a.chromeLinks {
-      padding-bottom: 1px;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.45); }
-      .blockContent.image .content p a.chromeLinks:hover {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.65); }
-  .blockContent.bottom {
-    position: absolute;
-    bottom: 80px;
-    left: 0;
-    right: 0;
-    margin: 0 auto; }
-  .blockContent.top {
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    margin: 0 auto; }
-
-.block {
-  display: block;
-  width: 100%;
-  background-size: contain;
-  position: relative;
-  overflow: hidden;
-  height: 600px; }
-  .block#about {
-    height: auto; }
-  .block#nest {
-    background: -moz-linear-gradient(top, transparent 9%, rgba(0, 0, 0, 0.4) 48%), url("/static/images/nest.jpg") no-repeat;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, transparent), color-stop(48%, rgba(0, 0, 0, 0.4))), url("/static/images/nest.jpg") no-repeat;
-    background: -webkit-linear-gradient(top, transparent 9%, rgba(0, 0, 0, 0.4) 48%), url("/static/images/nest.jpg") no-repeat;
-    background: -o-linear-gradient(top, transparent 9%, rgba(0, 0, 0, 0.4) 48%), url("/static/images/nest.jpg") no-repeat;
-    background: -ms-linear-gradient(top, transparent 9%, rgba(0, 0, 0, 0.4) 48%), url("/static/images/nest.jpg") no-repeat;
-    background: linear-gradient(to bottom, transparent 9%, rgba(0, 0, 0, 0.4) 48%), url("/static/images/nest.jpg") no-repeat;
-    background-size: cover;
-    background-position: 30% 50%;
-    background-repeat: no-repeat; }
-  .block#kpcb {
-    background: -moz-linear-gradient(top, rgba(73, 40, 12, 0) 10%, rgba(73, 40, 12, 0.8) 68%), url("/static/images/kpcb.jpg") no-repeat;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(73, 40, 12, 0)), color-stop(68%, rgba(73, 40, 12, 0.8))), url("/static/images/kpcb.jpg") no-repeat;
-    background: -webkit-linear-gradient(top, rgba(73, 40, 12, 0) 10%, rgba(73, 40, 12, 0.8) 68%), url("/static/images/kpcb.jpg") no-repeat;
-    background: -o-linear-gradient(top, rgba(73, 40, 12, 0) 10%, rgba(73, 40, 12, 0.8) 68%), url("/static/images/kpcb.jpg") no-repeat;
-    background: -ms-linear-gradient(top, rgba(73, 40, 12, 0) 10%, rgba(73, 40, 12, 0.8) 68%), url("/static/images/kpcb.jpg") no-repeat;
-    background: linear-gradient(to bottom, rgba(73, 40, 12, 0) 10%, rgba(73, 40, 12, 0.8) 68%), url("/static/images/kpcb.jpg") no-repeat;
-    background-size: cover;
-    background-position: 82% 30%;
-    background-repeat: no-repeat; }
-  .block#stanford {
-    background: -moz-linear-gradient(bottom, rgba(37, 94, 143, 0) 35%, rgba(37, 94, 143, 0.4) 80%), url("/static/images/stanford.jpg") no-repeat;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(35%, rgba(37, 94, 143, 0)), color-stop(80%, rgba(37, 94, 143, 0.4))), url("/static/images/stanford.jpg") no-repeat;
-    background: -webkit-linear-gradient(bottom, rgba(37, 94, 143, 0) 35%, rgba(37, 94, 143, 0.4) 80%), url("/static/images/stanford.jpg") no-repeat;
-    background: -o-linear-gradient(bottom, rgba(37, 94, 143, 0) 35%, rgba(37, 94, 143, 0.4) 80%), url("/static/images/stanford.jpg") no-repeat;
-    background: -ms-linear-gradient(bottom, rgba(37, 94, 143, 0) 35%, rgba(37, 94, 143, 0.4) 80%), url("/static/images/stanford.jpg") no-repeat;
-    background: linear-gradient(to top, rgba(37, 94, 143, 0) 35%, rgba(37, 94, 143, 0.4) 80%), url("/static/images/stanford.jpg") no-repeat;
-    background-size: cover;
-    background-position: 50.5% 50%;
-    background-repeat: no-repeat; }
-  .block#venmo .white-image {
-    position: relative;
-    width: 100%; }
-    .block#venmo .white-image .static {
-      width: 680px;
-      height: 604px;
-      position: absolute;
-      left: 50%;
-      margin-left: -340px;
-      background-image: url("/static/images/venmo1.jpg");
-      background-repeat: no-repeat;
-      background-size: contain; }
-  .block#mates .white-image {
-    display: none;
-    position: relative;
-    width: 100%; }
-    .block#mates .white-image .static {
-      width: 669px;
-      height: 1027px;
-      position: absolute;
-      left: 50%;
-      margin-left: -334.5px;
-      background-image: url("/static/images/mates_static@2x.jpg");
-      background-repeat: no-repeat;
-      background-size: contain; }
-  .block#mates .slider {
-    position: relative; }
-    .block#mates .slider div.chevrons {
-      position: relative;
-      z-index: 4; }
-      .block#mates .slider div.chevrons div {
-        width: 18px;
-        height: 32px;
-        opacity: 0.35;
-        display: block;
-        -webkit-transition: opacity 0.3s;
-        transition: opacity 0.3s; }
-        .block#mates .slider div.chevrons div:hover {
-          cursor: pointer;
-          opacity: 0.6; }
-      .block#mates .slider div.chevrons .previous {
-        position: absolute;
-        left: 60px;
-        background: url("src/previous.png");
-        background-size: cover; }
-      .block#mates .slider div.chevrons .next {
-        position: absolute;
-        right: 60px;
-        background: url("src/next.png");
-        background-size: cover; }
-      .block#mates .slider div.chevrons .disabled {
-        opacity: 0.08; }
-        .block#mates .slider div.chevrons .disabled:hover {
-          opacity: 0.08;
-          cursor: auto; }
-    .block#mates .slider div.slide {
-      position: absolute;
-      -webkit-transition: left 0.6s;
-      transition: left 0.6s;
-      -webkit-transition-timing-function: ease-in-out;
-      /* Safari and Chrome */
-      /*transition-timing-function: ease-in-out; }
-      .block#mates .slider div.slide.transitionOverride {
-        -webkit-transition: none !important;
-        transition: none !important; }
-      .block#mates .slider div.slide.centered {
-        left: 50%; }
-      .block#mates .slider div.slide.right {
-        left: 1800px; }
-      .block#mates .slider div.slide.left {
-        left: -400px; }
-    .block#mates .slider #slider1 {
-      background: url("src/camoji_screenshots.png") no-repeat;
-      height: 642px;
-      background-size: contain;
-      width: 642px;
-      margin-left: -321px; }
-    .block#mates .slider #slider2 {
-      background: url("/static/images/mates3@2x.jpg") no-repeat;
-      height: 1497px;
-      background-size: contain;
-      width: 642px;
-      margin-left: -321px; }
-    .block#mates .slider #slider3 {
-      background: url("/static/images/mates4@2x.jpg") no-repeat;
-      height: 340px;
-      background-size: contain;
-      width: 642px;
-      margin-left: -321px; }
-    .block#mates .slider #slider4 {
-      background: url("/static/images/mates1@2x.jpg") no-repeat;
-      height: 340px;
-      background-size: contain;
-      width: 642px;
-      margin-left: -321px; }
-*/
 
 @media (min-width: 1240px) {
 

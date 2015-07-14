@@ -19,11 +19,12 @@
   }
   
   .column.full { width: 100%; }
-  .column.two-thirds { width: 66.7%; }
+  .column.two-thirds { width: 66.66%; }
   .column.half { width: 50%; }
-  .column.third { width: 33.33%; }
+  .column.third { width: 33.333%; }
   .column.fourth { width: 25%; }
   .column.flow-opposite { float: right; }  
+  .column.one-sixth {width: 16.66%;}
 
 }
 

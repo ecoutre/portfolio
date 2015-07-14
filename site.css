@@ -101,7 +101,63 @@ p {
 	o-transition: bottom 0.2s;
 	-webkit-transform: translateZ(0);
 }
+.logo-500 {
+	display: block;
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    max-width: 12rem;
+    max-height: 12rem;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    margin:auto;
 
+    transition: bottom 0.2s;
+	webkit-transition: bottom 0.2s;
+	moz-transition: bottom 0.2s;
+	o-transition: bottom 0.2s;
+	-webkit-transform: translateZ(0);
+}
+.logo-engineering {
+	display: block;
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    max-width: 20rem;
+    max-height: 12rem;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    margin:auto;
+
+    transition: bottom 0.2s;
+	webkit-transition: bottom 0.2s;
+	moz-transition: bottom 0.2s;
+	o-transition: bottom 0.2s;
+	-webkit-transform: translateZ(0);
+}
+.logo-drawings {
+	display: block;
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    max-width: 28rem;
+    max-height: 12rem;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    margin:auto;
+
+    transition: bottom 0.2s;
+	webkit-transition: bottom 0.2s;
+	moz-transition: bottom 0.2s;
+	o-transition: bottom 0.2s;
+	-webkit-transform: translateZ(0);
+}
 .cover {
     position: absolute;
     top: 0;
@@ -127,6 +183,21 @@ p {
 
 .last {
 	border-left: 2px solid white;
+}
+
+#hawaiian {
+	background: url('src/cover_hawaiian.jpg') no-repeat center center;
+	background-size: cover;
+} 
+
+#rgbe {
+	background: url('src/cover_rgbe.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+#startups500 {
+	background: url('src/cover_500.jpg') no-repeat center center;
+	background-size: cover;
 }
 
 #camoji {
@@ -155,8 +226,8 @@ p {
 	background-size: cover;
 }
 
-#paintings {
-	background: url('src/cover_paintings.jpg') no-repeat center center;
+#engineering {
+	background: url('src/cover_gunslinger.jpg') no-repeat center center;
 	background-size: cover;
 }
 
@@ -165,18 +236,40 @@ p {
 	background-size: cover;
 }
 
+.cover-hawaiian {
+	background-color: rgba(76, 46, 146, 1.0);
+}
+
+.cover-hawaiian:hover {
+	background-color: rgba(76, 46, 146, 0.8);
+} 
+
+.cover-rgbe {
+	background-color: rgba(35, 66, 151, 1.0);
+}
+
+.cover-rgbe:hover {
+	background-color: rgba(35, 66, 151, 0.85);
+}
+
+.cover-500 {
+	background-color: rgba(0, 0, 0, 1.0);
+}
+
+.cover-500:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
 .cover-camoji {
 	background-color: rgba(76, 177, 250, 1.0);
 }
 
 .cover-camoji:hover {
 	background-color: rgba(76, 177, 250, 0.90);
-	
 }
 
 .cover-leo {
 	background-color: rgba(80, 224, 155, 1.0);
-	
 }
 
 .cover-leo:hover {
@@ -207,28 +300,39 @@ p {
 	background-color: rgba(165,80,153, 0.8);
 }
 
-.cover-paintings {
-	background-color: rgba(74,85,159, 1.0);
+.cover-engineering {
+	background-color: rgba(68,69,78, 1.0);
 	/*background-color: rgba(64, 80, 94, 1.0);*/
 }
 
-.cover-paintings:hover {
-	background-color: rgba(74,85,159, 0.75);
+.cover-engineering:hover {
+	background-color: rgba(68,69,78, 0.75);
 	/*background-color: rgba(64, 80, 94, 0.75);*/
 }
 
 .cover-drawings {
-	background-color: rgba(63,185,152, 1.0);
+	background-color: rgba(35, 66, 151, 1.0);
 }
 
 .cover-drawings:hover {
-	background-color: rgba(63,185,152, 0.6);
+	background-color: rgba(35, 66, 151, 0.8);
 }
 
 .cover:hover .logo {
 	bottom: 20%;
 }
 
+.cover:hover .logo-500 {
+	bottom: 20%;
+}
+
+.cover:hover .logo-engineering {
+	bottom: 20%;
+}
+
+.cover:hover .logo-drawings {
+	bottom: 20%;
+}
 
 h4 {
 	color: white;

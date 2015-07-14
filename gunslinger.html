@@ -9,41 +9,21 @@
         <meta property="og:title" content="Evan Coutre" />
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Hi there! I'm a full-stack designer from usc and currently a student at USC studying computer science and business administration while also continuing my love for playing soccer. Fight On! I am naturally an analytical thinker, however combining this with my creative talent and eye for perfection seperates me from the rest. You can view some of my work below. If you want to work together or just say hi feel free to reach out anytime." />
-        <meta property="og:url" content="http://www.evancoutre.com/" />
+        <meta property="og:url" content="http://www.evancoutre.co/" />
         <meta property="og:image" content="http://www.evancoutre.com/src/fb_photo.png" /> 
-
-        <!-- js -->
-		<script src="js/classie.js"></script>
-		<script>
-		    function init() {
-		        window.addEventListener('scroll', function(e){
-		            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-		                shrinkOn = 100,
-		                header = document.querySelector("header");
-		            if (distanceY > shrinkOn) {
-		                classie.add(header,"smaller");
-		            } else {
-		                if (classie.has(header,"smaller")) {
-		                    classie.remove(header,"smaller");
-		                }
-		            }
-		        });
-		    }
-		    window.onload = init();
-		</script>
 
     	<script language="javascript" type="text/javascript" src="site.js"></script>
 
-        <script>
-  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    	<script>
+    		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  			ga('create', 'UA-58181011-1', 'auto');
-  			ga('send', 'pageview');
+    		ga('create', 'UA-65029389-1', 'auto');
+    		ga('send', 'pageview');
 
-		</script>
+    	</script>
 
 		<link rel="stylesheet" type="text/css" href="project.css">
 		<link rel="stylesheet" type="text/css" href="grid-custom.css">
@@ -51,7 +31,7 @@
 		<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
 
 		<link rel="icon" type="image/png" href="src/favicon.png">
-    	<title>GUNSLINGER | Evan Coutre</title>
+    	<title>Gunslinger | Evan Coutre</title>
 
     	<style>
     		.logo {
@@ -69,7 +49,7 @@
  				<img class="logo" src='src/logo_gunslinger.png'></img>
 			</h1>
 			<nav>
-				<div class="link back"><a href="index.html"><span class="optional">BACK</span> HOME</a></div>
+				<div class="link back"><a href="engineering.html"><span class="optional">BACK</span></a></div>
 
 				<div class="link next"><a href="gotham.html">NEXT<span class="optional">: GOTHAM CITY</span></a></div>
 			</nav>
@@ -82,63 +62,51 @@
 
 	<div id="wrapper">
 
-	<div id="content">
+		<div id="content">
+			<div class="container gunslinger">
+		 		<div class="row clearfix">
+					<div class="column full">
+						<div class="body first">This fall I participated in my first hackathon at <a href="http://hacksc.com/" target="_blank">HackSC</a>. With a team of 4 we won 1st place for the Myo hack category for our hack called <a href="http://challengepost.com/software/gunslinger" target="_blank">Gunslinger</a>. Not bad for a first timer!</div>
 
-		<div class="container gunslinger">
+						<div class="body">
+						Gunslinger is an online multiplayer game simulating a Wild West duel shootout that you play with a <a href="https://www.thalmic.com" target="_blank">Myo-band, a gesture control armband by Thalmic Labs</a>. Gunslinger uses WebRTC and Socket.io to connect you to other users on the website. Once connected, players wait for the signal to draw. To draw your weapon, you must prime and cock your gun by performing gestures. The first Gunslinger to draw and shoot their weapons wins!
+						</div>
 
-	 		<div class="row clearfix">
+						<div class="image"><iframe width="680" height="360" align="center" src="http://www.youtube.com/embed/ue32v886-2U" frameborder="0" allowfullscreen></iframe></div>
 
-				<div class="column full">
+						<div class="white-image">
+							<div class="static">
+							</div>
+						</div>
+						
+						<div class="image gunslinger-presentation">
+							<div class="title"></div>
+							<div class="caption"></div>
+							<div class="mask"></div>
+						</div>
 
-					<div class="body first">This fall I participated in my first hackathon at <a href="http://hacksc.com/" target="_blank">HackSC</a>. With a team of 4 we won 1st place for the Myo hack category for our hack called <a href="http://challengepost.com/software/gunslinger" target="_blank">Gunslinger</a>. Not bad for a first timer!</div>
 
-					<div class="body">
-					Gunslinger is an online multiplayer game simulating a Wild West duel shootout that you play with a <a href="https://www.thalmic.com" target="_blank">Myo-band, a gesture control armband by Thalmic Labs</a>. Gunslinger uses WebRTC and Socket.io to connect you to other users on the website. Once connected, players wait for the signal to draw. To draw your weapon, you must prime and cock your gun by performing gestures. The first Gunslinger to draw and shoot their weapons wins!
-					</div>
+						<div class="bottom-links">
+							<div class="previous-bottom"><a href="rgbe.html"><span class="optional">Previous: </span><span class="onSmall">&lt; &nbsp;</span>RGBe</a></div>
 
-					<div class="image"><iframe width="680" height="360" align="center" src="http://www.youtube.com/embed/ue32v886-2U" frameborder="0" allowfullscreen></iframe></div>
-
-					<div class="white-image">
-						<div class="static">
+							<div class="next-bottom"><a href="gotham.html"><span class="optional">Next: </span>Gotham City<span class="onSmall">&nbsp; &gt;</span></a></div>
 						</div>
 					</div>
-					
-					<div class="image gunslinger-presentation">
-						<div class="title"></div>
-						<div class="caption"></div>
-						<div class="mask"></div>
+		    	</div>
+		    </div>
+		</div>
+
+		<div id="footer">
+			<footer class="row clearfix">
+				<div class="nav">
+					<div class="column full nav-1">
+						<a href="https://twitter.com/vrjbndr">Twitter</a>
+						<a href="https://dribbble.com/vrjbndr">Dribbble</a>
+						<a href="https://www.linkedin.com/in/vbindra">LinkedIn</a>
 					</div>
-
-
-					<div class="bottom-links">
-
-						<div class="previous-bottom"><a href="usc.html"><span class="optional">Previous: </span><span class="onSmall">&lt; &nbsp;</span>USC</a></div>
-
-						<div class="next-bottom"><a href="gotham.html"><span class="optional">Next: </span>Gotham City<span class="onSmall">&nbsp; &gt;</span></a></div>
-
-					</div>
-
-
 				</div>
-	    	</div>
-
+	    	</footer>
 	    </div>
-	</div>
-
-	<div id="footer">
-
-
-		<footer class="row clearfix">
-			<div class="nav">
-				<div class="column full nav-1">
-					<a href="https://twitter.com/vrjbndr">Twitter</a>
-					<a href="https://dribbble.com/vrjbndr">Dribbble</a>
-					<a href="https://www.linkedin.com/in/vbindra">LinkedIn</a>
-				</div>
-			</div>
-    	</footer>
-
-    </div>
     </div>
 
 	</body>
